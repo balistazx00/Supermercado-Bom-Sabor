@@ -13,3 +13,259 @@
   <!-- Arquivo CSS externo -->
   <link rel="stylesheet" href="style.css">
 </head>
+
+<body>
+
+  <!-- CABEÇALHO E NAVEGAÇÃO -->
+  <header class="cabecalho">
+    <div class="container cabecalho-conteudo">
+      <a href="#inicio" class="logo">
+        <span class="logo-icone">🛒</span>
+        <span class="logo-texto">Bom <strong>Sabor</strong></span>
+      </a>
+
+      <nav class="menu-navegacao" aria-label="Menu principal">
+        <ul class="menu-lista">
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#departamentos">Departamentos</a></li>
+          <li><a href="#ofertas">Ofertas</a></li>
+          <li><a href="#clube">Clube de Vantagens</a></li>
+        </ul>
+      </nav>
+
+      <a href="#ofertas" class="btn btn-primario">Ver Ofertas</a>
+    </div>
+  </header>
+
+  <!-- CONTEÚDO PRINCIPAL -->
+  <main>
+
+    <!-- SEÇÃO 1: BANNER PRINCIPAL (HERO) -->
+    <section id="inicio" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-texto animar-entrada">
+          <span class="etiqueta-destaque">Quarta &amp; Quinta Verde • Até 30% OFF</span>
+          <h1>Alimentos frescos direto do produtor para a sua mesa.</h1>
+          <p>
+            Qualidade selecionada no hortifruti, padaria artesanal fornada a cada hora
+            e preços baixos todos os dias para abastecer a sua casa.
+          </p>
+          <div class="hero-acoes">
+            <a href="#ofertas" class="btn btn-secundario">Aproveitar Ofertas</a>
+            <a href="#departamentos" class="btn btn-contorno">Explorar Setores</a>
+          </div>
+        </div>
+
+        <div class="hero-imagem-wrapper animar-flutuar">
+          <img
+            src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=900&q=80"
+            alt="Corredor de hortifruti fresco e colorido no Supermercado Bom Sabor"
+            class="hero-imagem"
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO 2: DEPARTAMENTOS (CARDS EM GRID) -->
+    <section id="departamentos" class="secao">
+      <div class="container">
+        <div class="secao-cabecalho">
+          <h2>Nossos Departamentos</h2>
+          <p>Tudo o que você precisa organizado por setores com reposição diária.</p>
+        </div>
+
+        <div class="grid-cards">
+          <article class="card-departamento">
+            <img
+              src="https://images.unsplash.com/photo-1610832958506-aa56368176cf?auto=format&fit=crop&w=600&q=80"
+              alt="Frutas e verduras frescas na banca do hortifruti"
+            >
+            <div class="card-corpo">
+              <h3>Hortifruti</h3>
+              <p>Frutas, legumes e verduras colhidos diariamente com rigoroso controle de frescor.</p>
+              <a href="#ofertas" class="link-acao">Ver produtos →</a>
+            </div>
+          </article>
+
+          <article class="card-departamento">
+            <img
+              src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=600&q=80"
+              alt="Pães artesanais dourados recém-saídos do forno"
+            >
+            <div class="card-corpo">
+              <h3>Padaria Artesanal</h3>
+              <p>Pão francês quentinho, bolos caseiros, salgados assados e confeitaria fina.</p>
+              <a href="#ofertas" class="link-acao">Ver produtos →</a>
+            </div>
+          </article>
+
+          <article class="card-departamento">
+            <img
+              src="https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?auto=format&fit=crop&w=600&q=80"
+              alt="Cortes selecionados de carnes frescas no açougue"
+            >
+            <div class="card-corpo">
+              <h3>Açougue Premium</h3>
+              <p>Cortes bovinos, suínos e aves frescas com procedência garantida e corte na hora.</p>
+              <a href="#ofertas" class="link-acao">Ver produtos →</a>
+            </div>
+          </article>
+
+          <article class="card-departamento">
+            <img
+              src="https://images.unsplash.com/photo-1550583724-b2692b85b150?auto=format&fit=crop&w=600&q=80"
+              alt="Garrafas de leite, queijos e iogurtes na seção de laticínios"
+            >
+            <div class="card-corpo">
+              <h3>Laticínios &amp; Frios</h3>
+              <p>Queijos especiais, iogurtes naturais, manteigas e frios fatiados na hora.</p>
+              <a href="#ofertas" class="link-acao">Ver produtos →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO 3: OFERTAS DA SEMANA (CARDS COM FLEXBOX E GRID) -->
+    <section id="ofertas" class="secao secao-alternativa">
+      <div class="container">
+        <div class="secao-cabecalho">
+          <span class="selo-oferta animar-pulsar">Encarte Digital</span>
+          <h2>Ofertas da Semana</h2>
+          <p>Preços válidos enquanto durarem os estoques em nossas lojas físicas.</p>
+        </div>
+
+        <div class="grid-cards">
+          <article class="card-produto">
+            <span class="badge-desconto">-25%</span>
+            <img
+              src="https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?auto=format&fit=crop&w=600&q=80"
+              alt="Cacho de bananas nanicas maduras"
+            >
+            <div class="card-corpo">
+              <span class="categoria-tag">Hortifruti</span>
+              <h3>Banana Nanica Selecionada (kg)</h3>
+              <div class="preco-bloco">
+                <span class="preco-antigo">R$ 5,99</span>
+                <span class="preco-atual">R$ 4,49</span>
+              </div>
+              <a href="#clube" class="btn btn-primario btn-cheio">Garantir Oferta</a>
+            </div>
+          </article>
+
+          <article class="card-produto">
+            <span class="badge-desconto">-20%</span>
+            <img
+              src="https://images.unsplash.com/photo-1586444248902-2f64eddc13df?auto=format&fit=crop&w=600&q=80"
+              alt="Pão francês crocante na cesta"
+            >
+            <div class="card-corpo">
+              <span class="categoria-tag">Padaria</span>
+              <h3>Pão Francês Crocante (kg)</h3>
+              <div class="preco-bloco">
+                <span class="preco-antigo">R$ 14,90</span>
+                <span class="preco-atual">R$ 11,90</span>
+              </div>
+              <a href="#clube" class="btn btn-primario btn-cheio">Garantir Oferta</a>
+            </div>
+          </article>
+
+          <article class="card-produto">
+            <span class="badge-desconto">-30%</span>
+            <img
+              src="https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?auto=format&fit=crop&w=600&q=80"
+              alt="Garrafa de azeite de oliva extra virgem"
+            >
+            <div class="card-corpo">
+              <span class="categoria-tag">Mercearia</span>
+              <h3>Azeite Extra Virgem 500ml</h3>
+              <div class="preco-bloco">
+                <span class="preco-antigo">R$ 42,90</span>
+                <span class="preco-atual">R$ 29,99</span>
+              </div>
+              <a href="#clube" class="btn btn-primario btn-cheio">Garantir Oferta</a>
+            </div>
+          </article>
+
+          <article class="card-produto">
+            <span class="badge-desconto">-18%</span>
+            <img
+              src="https://images.unsplash.com/photo-1559598467-f8b76c8155d0?auto=format&fit=crop&w=600&q=80"
+              alt="Leite integral fresco em garrafa"
+            >
+            <div class="card-corpo">
+              <span class="categoria-tag">Laticínios</span>
+              <h3>Leite Integral Tipo A 1L</h3>
+              <div class="preco-bloco">
+                <span class="preco-antigo">R$ 6,49</span>
+                <span class="preco-atual">R$ 5,29</span>
+              </div>
+              <a href="#clube" class="btn btn-primario btn-cheio">Garantir Oferta</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO 4: CLUBE DE VANTAGENS (CTA) -->
+    <section id="clube" class="secao">
+      <div class="container">
+        <div class="banner-clube">
+          <div class="banner-clube-texto">
+            <h2>Entre para o Clube Bom Sabor</h2>
+            <p>
+              Cadastre seu e-mail para receber o encarte semanal antes de todo mundo
+              e ganhar <strong>10% de desconto</strong> na sua primeira compra.
+            </p>
+          </div>
+
+          <form class="form-clube" action="#clube" method="get">
+            <label for="email-cliente" class="sr-only">Seu melhor e-mail</label>
+            <input
+              type="email"
+              id="email-cliente"
+              name="email"
+              placeholder="Digite seu melhor e-mail..."
+              required
+            >
+            <button type="submit" class="btn btn-secundario">Quero Desconto</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- RODAPÉ -->
+  <footer class="rodape">
+    <div class="container rodape-grid">
+      <div>
+        <a href="#inicio" class="logo logo-rodape">
+          <span class="logo-icone">🛒</span>
+          <span class="logo-texto">Bom <strong>Sabor</strong></span>
+        </a>
+        <p class="rodape-descricao">
+          Qualidade, variedade e economia perto de você desde 1998.
+        </p>
+      </div>
+
+      <div>
+        <h4>Horário de Funcionamento</h4>
+        <p>Segunda a Sábado: 07h às 22h</p>
+        <p>Domingos e Feriados: 08h às 20h</p>
+      </div>
+
+      <div>
+        <h4>Endereço &amp; Contato</h4>
+        <p>Av. Brasil, 1450 — Centro</p>
+        <p>Telefone: (11) 3456-7890</p>
+      </div>
+    </div>
+
+    <div class="rodape-base">
+      <p>&copy; 2026 Supermercado Bom Sabor. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
